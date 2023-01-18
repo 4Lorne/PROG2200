@@ -8,17 +8,22 @@ namespace LoopCounting
         {
             for (int x = 1; x <= 5; x++)
             {
-                if (x > 2)
+                for (int i = 1; i <= 20; i++)
                 {
-                    break; 
-                }
-                for (int i = 1; i <= 10; i++)
-                {
-                    Console.WriteLine(i);
-                }
-                for (int i = 10; i >= 1; i--)
-                {
-                    Console.WriteLine(i);
+                    if (i >= 10)
+                    {
+                        int result = (2 * 10) - i;
+                        if (result == 0)
+                        {
+                            break;
+                        }
+                        Console.WriteLine(result);
+                    }
+                    if (i <= 10)
+                    {
+                        Console.WriteLine(i);
+                    }
+                    
                 }
             }
         }
